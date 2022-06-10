@@ -1,0 +1,31 @@
+python3 main_pretrain.py \
+    --dataset cifar100 \
+    --encoder resnet18 \
+    --data_dir ./data \
+    --max_epochs 200 \
+    --gpus 3 \
+    --precision 16 \
+    --optimizer sgd \
+    --scheduler warmup_cosine \
+    --lr 0.03 \
+    --classifier_lr 0.3 \
+    --weight_decay 5e-4 \
+    --batch_size 256 \
+    --num_workers 3 \
+    --brightness 0.4 \
+    --contrast 0.4 \
+    --saturation 0.4 \
+    --hue 0.1 \
+    --gaussian_prob 0.0 0.0 \
+    --name simmoco \
+    --project dual_temperature \
+    --entity kaistssl \
+    --wandb \
+    --method simmoco_dual_temperature \
+    --proj_hidden_dim 128 \
+    --temperature 0.1 \
+    --dt_m 10 \
+    --base_tau_momentum 0.99 \
+    --final_tau_momentum 0.99 \
+    --momentum_classifier
+
