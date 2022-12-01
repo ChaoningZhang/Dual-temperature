@@ -19,8 +19,8 @@ python3 main_pretrain.py \
     --hue 0.1 \
     --gaussian_prob 0.0 0.0 \
     --name simmoco \
-    --project dual_temperature \
-    --entity kaistssl \
+    --project <YOUR_WANDB_PROJECT> \
+    --entity <YOUR_WANDB_ENTITY> \
     --wandb \
     --method simmoco_dual_temperature \
     --proj_hidden_dim 128 \
