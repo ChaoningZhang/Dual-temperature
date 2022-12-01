@@ -39,7 +39,7 @@ class SimCo_DualTemperature(BaseMomentumMethod):
         dt_m: float,
         **kwargs
     ):
-        """Implements MoCo V2+ (https://arxiv.org/abs/2011.10566).
+        """Implements simco with dual temperature.
 
         Args:
             proj_output_dim (int): number of dimensions of projected features.
