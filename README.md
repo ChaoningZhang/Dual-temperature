@@ -18,7 +18,7 @@ Decoupled Adversarial Contrastive Learning for Self-supervised Adversarial Robus
 
 ---
 
-# Dual Temperature
+# Dual Temperature InfoNCE Loss
 You can simply replace your original loss with dual-temperature loss from the following code:
 ```python
 # q1 is the anchor and k2 is the positive sample
