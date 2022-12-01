@@ -22,10 +22,45 @@ Decoupled Adversarial Contrastive Learning for Self-supervised Adversarial Robus
 You can simply replace your original loss with dual-temperature loss from the following code:
 ```python
 # q1 is the anchor and k2 is the positive sample
-# we use a scalar number dt_m to control the other temperature
 nce_loss = dual_temperature_loss_func(q1, k2,
                                 temperature=temperature,
                                 dt_m=dt_m)
+
+def dual_temperature_loss_func(
+    query: torch.Tensor,
+    key: torch.Tensor, 
+    temperature=0.1,
+    dt_m=10,
+) -> torch.Tensor:
+
+    # intra-anchor hardness-awareness
+    b = query.size(0)
+    pos = torch.einsum("nc,nc->n", [query, key]).unsqueeze(-1)
+
+    # Selecte the intra negative samples according the updata time, 
+    neg = torch.einsum("nc,ck->nk", [query, key.T])
+    mask_neg = torch.ones_like(neg, dtype=bool)
+    mask_neg.fill_diagonal_(False)
+    neg = neg[mask_neg].reshape(neg.size(0), neg.size(1)-1)
+    logits = torch.cat([pos, neg], dim=1)
+    
+    logits_intra = logits / temperature
+    prob_intra = F.softmax(logits_intra, dim=1)
+
+    # inter-anchor hardness-awareness
+    logits_inter = logits / (temperature*dt_m)
+    prob_inter = F.softmax(logits_inter, dim=1)
+
+    # hardness-awareness factor
+    inter_intra = (1 - prob_inter[:, 0]) / (1 - prob_intra[:, 0])
+
+    loss = -torch.nn.functional.log_softmax(logits_intra, dim=-1)[:, 0]
+
+    # final loss
+    loss = inter_intra.detach() * loss
+    loss = loss.mean()
+
+    return loss
 
 ```
 
