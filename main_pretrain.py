@@ -70,7 +70,6 @@ def main():
         ), "Dali is not currently avaiable, please install it first with [dali]."
         MethodClass = type(f"Dali{MethodClass.__name__}", (MethodClass, PretrainABC), {})
 
-    # import pdb; pdb.set_trace()
     model = MethodClass(**args.__dict__)
 
     # contrastive dataloader
