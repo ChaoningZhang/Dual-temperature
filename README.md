@@ -11,6 +11,13 @@ This repository is the official implementation of ["Dual Temperature Helps Contr
 
 <img src="image.png" width="400" />
 
+---
+See also our other works:
+
+Dual Temperature Helps Contrastive Learning Without Many Negative Samples: Towards Understanding and Simplifying MoCo (Accepted by CVPR2022) [code](https://github.com/ChaoningZhang/Dual-temperature.git) [paper](https://arxiv.org/abs/2203.17248)
+
+---
+
 # Enviroment
 
 Please refer [solo-learn](https://github.com/vturrisi/solo-learn) to install the enviroment.
