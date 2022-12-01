@@ -1,5 +1,6 @@
 # Dual Temperature Helps Contrastive Learning Without Many Negative Samples: Towards Understanding and Simplifying MoCo (Accepted by CVPR2022)
 
+
 Chaoning Zhang, Kang Zhang, Trung X. Pham, Axi Niu, Zhinan Qiao, Chang D. Yoo, In So Kweon
 
 This repository is the official implementation of ["Dual Temperature Helps Contrastive Learning Without Many Negative Samples: Towards Understanding and Simplifying MoCo"](https://arxiv.org/abs/2203.17248).
@@ -15,6 +16,7 @@ CIFAR10 and CIFAR100 will be automately downloaded.
 To train SimCo, SimMoCo, and MoCoV2, use the script in folder `./bash_files`. You should change the entity and project name to enable the wandb logging.
 
 # Results
+
 | Batch size | 64    | 128   | 256            | 512   | 1024  |
 |------------|-------|-------|----------------|-------|-------|
 | MoCo v2    | 52.58 | 54.40 | 53.28          | 51.47 | 48.90 |
