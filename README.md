@@ -5,6 +5,8 @@ Chaoning Zhang, Kang Zhang, Trung X. Pham, Axi Niu, Zhinan Qiao, Chang D. Yoo, I
 
 This repository is the official implementation of ["Dual Temperature Helps Contrastive Learning Without Many Negative Samples: Towards Understanding and Simplifying MoCo"](https://arxiv.org/abs/2203.17248).
 
+![Hardness-awareness in InfoNCE](image.png "MarineGEO logo")
+
 # Enviroment
 
 Please refer [solo-learn](https://github.com/vturrisi/solo-learn) to install the enviroment.
