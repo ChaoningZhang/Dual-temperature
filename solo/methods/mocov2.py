@@ -40,7 +40,7 @@ class MoCoV2(BaseMomentumMethod):
         queue_size: int,
         **kwargs
     ):
-        """Implements MoCo V2+ (https://arxiv.org/abs/2011.10566).
+        """Implements MoCo.
 
         Args:
             proj_output_dim (int): number of dimensions of projected features.
