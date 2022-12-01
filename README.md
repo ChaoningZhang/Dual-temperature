@@ -12,7 +12,7 @@ Please refer [solo-learn](https://github.com/vturrisi/solo-learn) to install the
 CIFAR10 and CIFAR100 will be automately downloaded.
 
 # Training
-To train SimCo, SimMoCo, and MoCoV2, use the script in folder `./bash_files`.
+To train SimCo, SimMoCo, and MoCoV2, use the script in folder `./bash_files`. You should change the entity and project name to enable the wandb logging.
 
 # Results
 | Batch size | 64    | 128   | 256            | 512   | 1024  |
