@@ -22,6 +22,7 @@ Decoupled Adversarial Contrastive Learning for Self-supervised Adversarial Robus
 You can simply replace your original loss with dual-temperature loss from the following code:
 ```python
 # q1 is the anchor and k2 is the positive sample
+# The intra-anchor hardness-awareness is controlled by `temperature` parameter.
 nce_loss = dual_temperature_loss_func(q1, k2,
                                 temperature=temperature,
                                 dt_m=dt_m)
@@ -40,7 +41,7 @@ def dual_temperature_loss_func(
     dt_m: the scalar number to get inter-anchor hardness awareness temperature.
           inter-anchor hardness awareness temperature is calculated by dt_m * temperature
     """
-    
+
     # intra-anchor hardness-awareness
     b = query.size(0)
     pos = torch.einsum("nc,nc->n", [query, key]).unsqueeze(-1)
