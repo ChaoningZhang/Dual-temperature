@@ -9,7 +9,7 @@ Contrastive learning (CL) is widely known to require many negative samples, 6553
 This repository is the official implementation of ["Dual Temperature Helps Contrastive Learning Without Many Negative Samples: Towards Understanding and Simplifying MoCo"](https://arxiv.org/abs/2203.17248).
 
 
-<img src="image.png" width="400" />
+<img src="asset/image.png" width="400" />
 
 ---
 See also our other works:
