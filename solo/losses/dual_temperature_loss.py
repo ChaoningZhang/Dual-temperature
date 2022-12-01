@@ -26,6 +26,12 @@ def dual_temperature_loss_func(
     temperature=0.1,
     dt_m=10,
 ) -> torch.Tensor:
+    """
+    query: anchor sample
+    key: positive sample
+    temperature: intra-anchor hardness-awareness control temperature
+    dt_m: the scalar number to get inter-anchor hardness awareness temperature
+    """
 
     # intra-anchor hardness-awareness
     b = query.size(0)
