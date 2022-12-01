@@ -57,6 +57,7 @@ import glob
 
 
 def main():
+    # set the seed
     seed_everything(15)
 
     args = parse_args_pretrain()
