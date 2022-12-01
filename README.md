@@ -18,14 +18,14 @@ Decoupled Adversarial Contrastive Learning for Self-supervised Adversarial Robus
 
 ---
 
-# Enviroment
+# 🔧 Enviroment
 
 Please refer [solo-learn](https://github.com/vturrisi/solo-learn) to install the enviroment.
 
 # Dataset
 CIFAR10 and CIFAR100 will be automately downloaded.
 
-# Training
+# ⚡ Training
 To train SimCo, SimMoCo, and MoCoV2, use the script in folder `./bash_files`. You should change the entity and project name to enable the wandb logging.
 
 # Results
