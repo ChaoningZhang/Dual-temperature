@@ -29,6 +29,8 @@ To train SimCo, SimMoCo, and MoCoV2, use the script in folder `./bash_files`. Yo
 | SimMoCo    | 54.02 | 54.93 | 54.11          | 52.45 | 49.70 |
 | SimCo      | 58.04 | 58.29 | **58.35** | 57.08 | 55.34 |
 
+More result can be found in the paper.
+
 This code is developed based on [solo-learn](https://github.com/vturrisi/solo-learn).
 
 # Citation
