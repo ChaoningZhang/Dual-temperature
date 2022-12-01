@@ -185,6 +185,7 @@ def main():
     )
 
     # save code for each run
+    #################################################################
     if args.wandb:
         experimentdir = f"code/{args.method}_{args.project}_{args.name}_{trainer.logger.version}"
         args.codepath = experimentdir
@@ -204,7 +205,8 @@ def main():
     shutil.copytree(f"solo", os.path.join(experimentdir, 'solo'))
     shutil.copytree(f"bash_files", os.path.join(experimentdir, 'bash_files'))
     shutil.copyfile(f"main_pretrain.py", os.path.join(experimentdir, 'main_pretrain.py'))
-
+    #################################################################
+    
     if args.dali:
         trainer.fit(model, val_dataloaders=val_loader)
     else:
