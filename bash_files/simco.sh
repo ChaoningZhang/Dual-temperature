@@ -1,3 +1,4 @@
+# This is the script to train simco
 python3 main_pretrain.py \
     --dataset cifar100 \
     --encoder resnet18 \
