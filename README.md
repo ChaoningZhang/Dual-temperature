@@ -31,4 +31,7 @@ This code is developed based on [solo-learn](https://github.com/vturrisi/solo-le
 }
 ```
 
-<!-- The code is coming soon. Please contact through chaoningzhang1990@gmail.com for early access. -->
+
+# Acknowledgement
+
+This work was partly supported by Institute for Information & communications Technology Planning & Evaluation (IITP) grant funded by the Korea government (MSIT) under grant No.2019-0-01396 (Development of framework for analyzing, detecting, mitigating of bias in AI model and training data), No.2021-0-01381 (Development of Causal AI through Video Understanding and Reinforcement Learning, and Its Applications to Real Environments) and No.2021-0-02068 (Artificial Intelligence Innovation Hub).
