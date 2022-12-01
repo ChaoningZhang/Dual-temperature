@@ -14,7 +14,7 @@ This repository is the official implementation of ["Dual Temperature Helps Contr
 ---
 See also our other works:
 
-Dual Temperature Helps Contrastive Learning Without Many Negative Samples: Towards Understanding and Simplifying MoCo (Accepted by CVPR2022) [code](https://github.com/ChaoningZhang/Dual-temperature.git) [paper](https://arxiv.org/abs/2203.17248)
+Decoupled Adversarial Contrastive Learning for Self-supervised Adversarial Robustness (Accepted by ECCV2022 oral presentation) [code](https://github.com/pantheon5100/DeACL.git) [paper](https://arxiv.org/abs/2207.10899)
 
 ---
 
