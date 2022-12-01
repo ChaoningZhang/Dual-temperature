@@ -184,7 +184,7 @@ def main():
         log_every_n_steps=args.log_frenquence,
     )
 
-    # save code for each run to make each run reproduceable
+    # save code for each run to make each run reproducible
     #################################################################
     if args.wandb:
         experimentdir = f"code/{args.method}_{args.project}_{args.name}_{trainer.logger.version}"
