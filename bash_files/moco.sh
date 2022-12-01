@@ -1,3 +1,4 @@
+# this is the script to train original moco
 python3 main_pretrain.py \
     --dataset cifar100 \
     --encoder resnet18 \
