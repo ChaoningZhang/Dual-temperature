@@ -2,6 +2,6 @@ wandb
 trained_models
 code
 data
-
+.env
 
 **/__pycache__/**
