@@ -21,9 +21,11 @@ Decoupled Adversarial Contrastive Learning for Self-supervised Adversarial Robus
 # Dual Temperature
 You can simply replace your original loss with dual-temperature loss from the following code:
 ```python
+# q1 is the anchor and k2 is the positive sample
 nce_loss = dual_temperature_loss_func(q1, k2,
                                 temperature=self.temperature,
                                 dt_m=self.dt_m)
+
 ```
 
 # 🔧 Enviroment
