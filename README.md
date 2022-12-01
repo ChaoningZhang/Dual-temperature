@@ -11,7 +11,6 @@ Please refer [solo-learn](https://github.com/vturrisi/solo-learn) to install the
 # Training
 To train SimCo, SimMoCo, and MoCoV2, use the script in folder `./bash_files`.
 
-
 # Results
 | Batch size | 64    | 128   | 256            | 512   | 1024  |
 |------------|-------|-------|----------------|-------|-------|
