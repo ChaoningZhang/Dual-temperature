@@ -23,7 +23,8 @@ You can simply replace your original loss with dual-temperature loss from the fo
 ```python
 # q1 is the anchor and k2 is the positive sample
 # The intra-anchor hardness-awareness is controlled by `temperature` parameter.
-# The inter-anchor hardness awareness is controlled by `dt_m` parameter, and temperature is calculated by dt_m * temperature.
+# The inter-anchor hardness awareness is controlled by `dt_m` parameter, 
+# and temperature is calculated by dt_m * temperature.
 nce_loss = dual_temperature_loss_func(q1, k2,
                                 temperature=temperature,
                                 dt_m=dt_m)
