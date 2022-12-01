@@ -22,6 +22,13 @@ Decoupled Adversarial Contrastive Learning for Self-supervised Adversarial Robus
 
 Please refer [solo-learn](https://github.com/vturrisi/solo-learn) to install the enviroment.
 
+> First clone the repo.
+> 
+> Then, to install solo-learn with Dali and/or UMAP support, use:
+> 
+> `pip3 install .[dali,umap,h5] --extra-index-url https://developer.download.nvidia.com/compute/redist`
+
+
 # Dataset
 CIFAR10 and CIFAR100 will be automately downloaded.
 
